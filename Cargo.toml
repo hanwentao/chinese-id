@@ -1,0 +1,9 @@
+[package]
+name = "chinese-id"
+version = "0.1.0"
+edition = "2021"
+description = "A library for validating Chinese ID numbers"
+license = "MIT"
+
+[dependencies]
+chrono = "0.4.37"
