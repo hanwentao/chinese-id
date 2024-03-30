@@ -26,7 +26,7 @@ pub type Result<'a> = std::result::Result<PersonalInfo<'a>, ValidationError>;
 
 const LENGTH: usize = 18;
 
-pub fn validate<'a>(id: &'a str) -> Result<'a> {
+pub fn validate(id: &str) -> Result<'_> {
     if id.len() != LENGTH {
         return Err(ValidationError::InvalidLength);
     }
